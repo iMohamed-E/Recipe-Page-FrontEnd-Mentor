@@ -1,0 +1,208 @@
+/* ==================== Global Setup ====================*/
+* {
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+--White:       hsl(0, 0%, 100%);
+--BG-Color:    hsl(30, 54%, 90%);
+--Light-Stone: hsl(30, 18%, 87%);
+--Mid-Stone:   hsl(30, 10%, 34%);
+--Dark-Stone:  hsl(24, 5%, 18%);
+--Brown:       hsl(14, 45%, 36%);
+--Dark-Rose:   hsl(332, 51%, 32%);
+--Light-Rose:  hsl(330, 100%, 98%);
+
+--Special-Font: "Young Serif";
+}
+
+/* ==================== Design ====================*/
+body {
+  background-color: var(--BG-Color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Container {
+  background-color: var(--White);
+  margin: 100px auto;
+  border-radius: 20px;
+  max-width: 45em;
+  padding-bottom: 30px;
+}
+
+.Container img {
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 52px;
+}
+
+@media (max-width: 700px) {
+  .Container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .Container img {
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+.Container h1 {
+  font-family: var(--Special-Font);
+  margin: 0;
+  font-size: 35px;
+  font-weight: 400;
+  padding-left: 40px;
+}
+
+.Container > p {
+  padding: 0 40px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 20px 0;
+  color: var(--Mid-Stone);
+}
+
+.Section {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* ==================== Preparation Section ====================*/
+.Special {
+  background-color: var(--Light-Rose);
+  margin: 20px 40px 0;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.Special h3 {
+  color: var(--Dark-Rose);
+  margin: 0 0 20px;
+}
+
+.Special ul li {
+  color: var(--Mid-Stone);
+  margin-left: 25px;
+  padding-left: 15px;
+}
+
+.Special ul li::marker {
+  color: var(--Dark-Rose);
+}
+
+.Special ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.Special ul li span {
+  font-weight: 700;
+}
+
+/* ==================== Ingredients Section ====================*/
+.Section h2 {
+  font-family: var(--Special-Font);
+  color: var(--Brown);
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.Section ul {
+  margin: 0 25px;
+}
+
+.Section ul li {
+  padding-left: 15px;
+  margin-bottom: 10px;
+  color: var(--Mid-Stone);
+}
+
+.Section ul li::marker {
+  color:var(--Brown);
+}
+
+.Section ul li:last-child {
+  margin-bottom: 30px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  margin: 0 30px;
+  background-color: var(--Light-Stone);
+}
+
+/* ==================== Instructions Section ====================*/
+.Section h2 {
+  margin-top: 20px;
+}
+
+.Section ol li {
+  margin: 0 25px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  color: var(--Mid-Stone);
+}
+
+.Section ol li::marker {
+	color: var(--Brown);
+  font-weight: 800;
+}
+
+.Section ol li:last-child {
+  margin-bottom: 30px;
+}
+
+.Section ol li span {
+  font-weight: 700;
+}
+
+/* ==================== Nutrition Section ====================*/
+.Section p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0;
+  color: var(--Mid-Stone);
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--Light-Stone);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 10px 0;
+}
+
+td:nth-child(1) {
+  padding-left: 25px;
+  color: var(--Mid-Stone);
+  width: 50%;
+}
+
+td:nth-child(2) {
+  color: var(--Brown);
+  font-weight: 700;
+}
